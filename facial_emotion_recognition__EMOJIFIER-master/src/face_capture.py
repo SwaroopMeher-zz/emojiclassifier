@@ -90,6 +90,6 @@ if __name__ == '__main__':
 
     cap = cv2.VideoCapture(0)
 
-    PATH = os.path.join("content", os.path.dirname(__file__), os.pardir, 'images', EMOTION_CLASS)
+    PATH = os.path.join(os.path.dirname(__file__), os.pardir, 'images', EMOTION_CLASS)
 
     generate_faces(PATH, N)
