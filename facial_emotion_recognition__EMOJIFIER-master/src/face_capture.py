@@ -22,7 +22,7 @@ import cv2
 sys.path.append(os.path.join(os.path.dirname(__file__), os.pardir))
 from src.__init__ import *
 
-
+print(os.path.join(os.path.dirname(__file__), os.pardir, 'images'))
 def generate_faces(saving_path, num):
 
     face_cascade = cv2.CascadeClassifier(config_parser['OPEN_CV']['cascade_classifier_path'])
